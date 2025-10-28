@@ -16,6 +16,18 @@ body,input,textarea{
     font-weight: 400;
 }
 
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 .page-width{
     max-width: 1140px;
     margin: auto;
@@ -74,6 +86,48 @@ h3{
 .flex-direction2{
     flex-direction: row;
 }
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: var(--akcent-color);
+  color: var(--main-color);
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.5em;
+  display: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+#scrollTopBtn:hover {
+  transform: scale(1.1);
+}
+
+.light-mode {
+  --main-color: #f5f5f5;
+  --second-color: #e0e0e0;
+  --text-primary: #222;
+  --text-secondary: #444;
+  --akcent-color: #F2A65A;
+}
+
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--akcent-color);
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
 
 
 /*hlavicka*/
