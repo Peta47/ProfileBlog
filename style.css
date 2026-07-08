@@ -372,6 +372,41 @@ a:hover{
 /*konec ctvrte sekce*/
 
 
+/*stack*/
+.stack-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+    gap:25px;
+    padding-bottom: 2em;
+}
+
+.stack-item{
+    background:var(--card-color);
+    border-radius:20px;
+    padding:30px 15px;
+    transition:.3s;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.stack-item:hover{
+    transform:translateY(-2px);
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+.stack-item img{
+    width:55px;
+    height:55px;
+    object-fit:contain;
+    margin-bottom:15px;
+}
+
+.stack-item span{
+    display:block;
+    font-weight:600;
+}
+
+/*konec stack*/
+
 
 /*pata sekce*/
 .fifth-section__grid{
@@ -669,3 +704,4 @@ address{
         margin: auto;
     }
 }
+
